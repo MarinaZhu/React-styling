@@ -1,4 +1,4 @@
-import './Card.css';
+import './Card.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faMapMarkerAlt, faRuler, faHeart, faStar, faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
 
