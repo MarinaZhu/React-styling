@@ -1,0 +1,170 @@
+.card {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.swipe-left {
+  transform: translateX(-100%) rotate(-15deg);
+  opacity: 0;
+}
+
+.swipe-right {
+  transform: translateX(100%) rotate(15deg);
+  opacity: 0;
+}
+
+.swipe-up {
+  transform: translateY(-100%) rotate(-5deg);
+  opacity: 0;
+}
+
+.profile-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profile-info {
+  padding: 0 20px 20px 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.verified-icon {
+  color: #4caf50; /* Green color for verified icon */
+  margin-left: 10px;
+}
+
+.location-info,
+.distance-info,
+.looking-for-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #777;
+  margin: 5px 0;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #ff6a6a; /* Pink color for icons */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 15px 0;
+}
+
+h3 {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.about {
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.interests {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.interest {
+  background-color: hsla(122, 39%, 49%, 0.4);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+.actions {
+  display: flex;
+  justify-content: center; /* Center buttons in the middle */
+  align-items: center;
+  gap: 10px; /* Space between buttons to make them closer */
+  margin-top: 20px;
+}
+
+.action-btn {
+  border: 2px solid black; /* Black border for buttons */
+  background: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 60px; /* Standard width for round buttons */
+  height: 60px; /* Standard height for round buttons */
+  border-radius: 50%; /* Makes the button round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0; /* Ensure no extra padding */
+}
+
+.action-btn:hover {
+  border-color: #ff5a5f; /* Darker border on hover */
+  transform: scale(1.1); /* Make the button slightly larger */
+}
+
+/* Ensure the button stays interactive after being clicked */
+.action-btn:focus,
+.action-btn:active {
+  outline: none; /* Remove default outline on click */
+  border-color: #ff5a5f; /* Keep the same border color as hover */
+  transform: scale(1.1); /* Keep the same scale as hover */
+}
+
+.action-btn.star {
+  width: 45px; /* Smaller width for star button */
+  height: 45px; /* Smaller height for star button */
+  border-radius: 50%; /* Ensures it remains round */
+}
+
+.dislike {
+  color: #ff5a5f; /* Red color for dislike */
+}
+
+.star {
+  color: #ffbf00; /* Gold color for favorite */
+}
+
+.like {
+  color: #4caf50; /* Green color for like */
+}
+
+/* Ensure icons are centered */
+.action-btn svg {
+  margin: 0;
+  width: 50%;
+  height: 50%;
+}
